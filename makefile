@@ -3,6 +3,6 @@ test:
 lint:
 	npx eslint .
 install:
-	npm ci
+	npm install
 fix_eslint:
 	eslint bin/src --fix
