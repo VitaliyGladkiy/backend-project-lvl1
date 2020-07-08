@@ -5,4 +5,4 @@ lint:
 install:
 	npm install
 fix_eslint:
-	eslint bin/src --fix
+	eslint . --fix
