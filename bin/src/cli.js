@@ -1,7 +1,11 @@
 const readlineSync = require('readline-sync');
 
-function getUserNameFromStream() {
+function getUserNameFromStream(){
   return readlineSync.question('May I have your name? ');
 }
 
-module.exports.getUserNameFromStream = getUserNameFromStream;
+
+
+
+
+module.exports.getUserNameFromStream=getUserNameFromStream;
