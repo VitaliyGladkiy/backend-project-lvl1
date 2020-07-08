@@ -1,7 +1,7 @@
 test:
 	echo "test from makefile"
 lint:
-	eslint .
+	npx eslint .
 install:
 	npm install
 fix_eslint:
