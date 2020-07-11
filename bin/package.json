@@ -2,13 +2,13 @@
   "name": "bin",
   "version": "1.0.0",
   "description": "",
-  "main": "brain-games.js",
+  "main": "brain-even.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src"
   },
   "bin": {
-    "brain-games": "brain-games.js"
+    "brain-even": "brain-even.js"
   },
   "author": "",
   "license": "ISC",

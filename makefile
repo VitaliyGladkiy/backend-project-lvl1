@@ -6,3 +6,9 @@ install:
 	npm install
 fix_eslint:
 	eslint . --fix
+brain-games:
+	npm run
+publish:
+	npm publish --dry-run
+link:
+	npm link bin
