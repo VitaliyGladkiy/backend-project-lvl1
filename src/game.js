@@ -1,4 +1,5 @@
 const readlineSync = require('readline-sync');
+const util = require('./util');
 
 const maxRandomInt = 100;
 function getUserNameFromStream() {
@@ -20,7 +21,11 @@ function getUserAnswer(questionString) {
 const isOdd = (digit) => !(digit % 2);
 
 function checkIsAnswerRight(answer, question) {
-  return isOdd(question) === answer;
+  if (util.answerOption[answer] === undefined || util.answerOption[answer] === null) {
+    return false;
+  }
+  const convertedAnswer = util.answerOption[answer];
+  return isOdd(question) === convertedAnswer;
 }
 
 module.exports = {

@@ -1,5 +1,8 @@
-const alias = {
+const answerOption = {
   yes: true,
+  no: false,
 };
 
-exports.convertAlias = (str) => (alias[str] ? alias[str] : false);
+const convertAlias = (str) => answerOption[str];
+
+module.exports = { answerOption, convertAlias };
