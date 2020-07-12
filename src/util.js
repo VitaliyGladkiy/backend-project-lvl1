@@ -5,4 +5,4 @@ const answerOption = {
 
 const convertAlias = (str) => answerOption[str];
 
-module.exports = { answerOption, convertAlias };
+module.export = { answerOption, convertAlias };

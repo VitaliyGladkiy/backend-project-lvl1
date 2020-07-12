@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const { main } = require('../src/main');
+import main from '../src/main';
 
 main();
