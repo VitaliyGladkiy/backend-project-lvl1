@@ -16,6 +16,7 @@ export default class CalckGame extends GameBasic {
     return a > b ? `${a} - ${b}` : `${a} + ${b}`;
   }
 
+  // eslint-disable-next-line consistent-return
   checkIsAnswerRight(question) {
     this.answerResult = !(question === this.question);
 

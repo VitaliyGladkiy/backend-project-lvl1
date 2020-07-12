@@ -15,6 +15,7 @@ export default class Dialog {
     console.log(`${this.rules}`);
   }
 
+  // eslint-disable-next-line class-methods-use-this
   makeQuestion(question) {
     console.log(`Question: ${question}`);
     return readlineSync.question('Your answer: ');

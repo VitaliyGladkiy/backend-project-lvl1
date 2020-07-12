@@ -21,6 +21,7 @@ export default class EvenGame extends GameBasic {
     return this.question;
   }
 
+  // eslint-disable-next-line consistent-return
   checkIsAnswerRight(answer) {
     if (answerOption[answer] === undefined || answerOption[answer] === null) {
       return false;
