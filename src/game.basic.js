@@ -7,8 +7,8 @@ export default class GameBasic {
     this.question = null;
   }
 
-  getRandomInt() {
-    return Math.floor(Math.random() * Math.floor(this.maxRandomInt));
+  getRandomInt(base = this.maxRandomInt) {
+    return Math.floor(Math.random() * Math.floor(base));
   }
 
   isGameFinished() {
