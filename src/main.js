@@ -1,7 +1,7 @@
 import EvenGame from './even.game.js';
 import Dialog from './dialog.js';
 import CalckGame from './calck.game.js';
-import NodGame from './nod.game';
+import NodGame from './nod.game.js';
 
 function GameFactory(gameName) {
   const gameLIst = {

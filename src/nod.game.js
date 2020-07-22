@@ -1,10 +1,9 @@
-import GameBasic from './game.basic';
+import GameBasic from './game.basic.js';
 
 export default class NodGame extends GameBasic {
   constructor() {
     super();
     this.rules = 'Find the greatest common divisor of given numbers.';
-    this.gameName = 'NOD Game';
     this.question = null;
     this.answerResult = true;
   }

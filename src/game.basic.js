@@ -5,6 +5,7 @@ export default class GameBasic {
     this.numberOfSuccessUnswers = 3;
     this.currentSessionRihghtUnsers = 0;
     this.question = null;
+    this.gameName = 'Brain Games';
   }
 
   getRandomInt(base = this.maxRandomInt) {
