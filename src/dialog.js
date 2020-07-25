@@ -21,11 +21,11 @@ export default class Dialog {
     return readlineSync.question('Your answer: ');
   }
 
-  sayResults(result) {
+  sayResults(result, answer = null, correct = null) {
     if (result) {
       console.log('Correct!');
     } else {
-      console.log(`${result} is wrong answer. Correct answer was ${result ? 'yes' : 'no'}. Let's try again, ${this.userName}!`);
+      console.log(`${answer || result} is wrong answer. Correct answer was ${correct || result ? 'yes' : 'no'}. Let's try again, ${this.userName}!`);
     }
   }
 
