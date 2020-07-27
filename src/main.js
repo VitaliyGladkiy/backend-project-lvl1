@@ -3,6 +3,7 @@ import Dialog from './dialog.js';
 import CalckGame from './calck.game.js';
 import NodGame from './nod.game.js';
 import ProgGame from './prog.game.js';
+import PrimeGame from './prime.game.js';
 
 function GameFactory(gameName) {
   const gameLIst = {
@@ -10,12 +11,13 @@ function GameFactory(gameName) {
     even: new EvenGame(),
     nod: new NodGame(),
     prog: new ProgGame(),
+    prime: new PrimeGame(),
   };
   return gameLIst[gameName];
 }
 
-export default function main() {
-  const game = GameFactory('prog');
+export default function main(gameName = 'prime') {
+  const game = GameFactory(gameName);
   const dialog = new Dialog(game.gameName, game.rules);
   dialog.sayhello();
   dialog.askUserForName();
@@ -27,3 +29,5 @@ export default function main() {
     dialog.sayResults(answerResult[0], answerResult[1], answerResult[2]);
   }
 }
+
+main();

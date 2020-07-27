@@ -8,11 +8,14 @@
     "lint": "eslint src"
   },
   "bin": {
-    "brain-even": "brain-even.js"
+    "brain-calk": "brain-calk.js",
+    "brain-even": "brain-even.js",
+    "brain-nod": "brain-nod.js",
+    "brain-prime": "brain-prime.js",
+    "brain-progression": "brain-progression.js"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  }
+  "dependencies": {}
 }

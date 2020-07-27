@@ -31,8 +31,7 @@ export default class EvenGame extends GameBasic {
 
     if (this.answerResult) {
       this.currentSessionRihghtUnsers += 1;
-
-      return [this.answerResult];
     }
+    return [this.answerResult];
   }
 }
